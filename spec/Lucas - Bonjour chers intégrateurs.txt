@@ -1,0 +1,47 @@
+Bonjour cher intégrateur.
+Voici les spécifications de ma maquette du site de la tour de pize.
+En vous souhaitant la bonne journée.
+
+
+Les polices : 
+
+Allerta Stencil : pour les boutons verts
+Advent pro : pour la partie haute : la présentation, l’adresse, le bouton jaune et le footer
+Gotu : pour la partie basse, les horaires et le menu
+
+Partie mobile :
+Alors comme tu le sais le site est en « one page » par conséquent, n’ayant pas mis de menu fixe il faut que ce petit logo :   soit fixe en bas à droite 
+
+Le menu n’est pas fixe il se comporte comme des boutons normaux, si tu as envie de faire une petite animation quand on clique fais toi plaisir, mais rien de trop kitsch.
+CONTACT : pointe vers la section contact, avec l’adresse, le numéro de téléphone (quand on clique ça appelle)  
+COMMANDER : pointe vers le menu de commandes, idéalement avec le bouton COMMANDER du panier.
+
+HORAIRES : pointe vers les horaires (logique n’est-ce pas ?)
+NOUS TROUVER : pointe vers la carte google ou open streetmap (au choix) et le bouton « y aller » qui est un lien pour lancer la navigation (genre ça lance Maps)
+
+Le bouton Facebook point évidemment vers la page Facebook (je ne sais pas à quel point il faut détailler les spécifications du site)
+La carte est navigable avec le « pin » sur l’adresse de la tour de Pize
+Le menu a trois parties :
+La partie des catégories : scrolling horizontal sur mobile, genre swipe gauche et droite pour défiler les différentes catégories.
+Les différents plats s’affichent en fonction de la catégorie sélectionnée.
+La couleur des cases sélectionnées (catégorie et plat) sont en jaune dans la maquette c’est le #F2B705
+Le panier est rempli avec les plats sélectionnés, on peut additionner ou soustraire des plats et faire l’addition du prix (mais je ne sais pas si on va jusque-là dans le projet)
+
+
+Partie desktop :
+
+-	La parallaxe !   -
+Le menu n’est pas fixe il défile comme le reste
+Le bouton « retour haut » présent dans la version mobile reste dans la version desktop en bas à droite
+Tu peux faire un léger effet de zoom sur le bouton « commander » si ça te fait plaisir
+La carte est cliquable et on peut naviguer dedans (google maps ou open street maps comme tu veux)
+Le menu pareil, affichage en fonction des catégories (plus ou moins de plats) le tout est transparent sauf les boutons jaunes et le bouton panier (comme spécifié dans la maquette).
+
+Pour le footer et le formulaire rien de spécial.
+
+
+Allez bon courage !
+
+Si vous avez des questions je suis en face.
+
+Bisous.
