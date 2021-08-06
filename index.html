@@ -10,7 +10,9 @@
     <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- css -->
-    <!-- <link  href="css/fonts.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Allerta+Stencil&family=Gotu&display=swap" rel="stylesheet"> 
     <link  href="css/styles.css" rel="stylesheet">
 
 
@@ -18,16 +20,16 @@
 </head>
 <body>
     <!-- header -->
-    <header id="top">
-        <img src="img/logo.svg" alt="La tour de Pize">
+    <header id="top" class="container">
+        <div class="row justify-content-md-center"><img src="img/logo.svg" alt="La tour de Pize"></div>
     </header>
     
     <!-- main navigation -->
     <nav class="mobile">
-        <a href="#contact">contact</a>
-        <a href="#command">commander</a>
-        <a href="#schedule">horaires</a>
-        <a href="#map">nous trouver</a>
+        <a class="btNav" href="#contact">contact</a>
+        <a class="btNav" href="#command">commander</a>
+        <a class="btNav" href="#schedule">horaires</a>
+        <a class="btNav" href="#map">nous trouver</a>
     </nav>
 
     <!-- <nav class="desktop">
@@ -40,8 +42,8 @@
     <!-- main section -->
     <main>
         <!-- presentation -->
-        <artcicle id="presentation">
-            <section>Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.
+        <artcicle >
+            <section id="presentation">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.
                 Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.
             </section>
             <section>

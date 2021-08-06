@@ -11,7 +11,7 @@ body, html {
 }
 
 body {
-    font-family: "AdventPro", sans-serif;
+    font-family: "Advent Pro", sans-serif;
     background: url("../img/wave.svg") no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -23,4 +23,27 @@ body {
     right:75px;
     bottom: 75px;
     z-index: 100;
+}
+
+a:link.btNav {
+    display:inline-block;
+    width: 150px;
+    text-align: center;
+    padding:15px;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: olivedrab;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    margin:20px;
+}
+
+a:hover.btNav { color:black; text-decoration: none; }
+a:visited.btNav { color:black; text-decoration: none; }
+a:active.btNav { color:black; text-decoration: none; }
+
+#presentation{
+    padding: 20px;
 }
