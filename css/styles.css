@@ -17,7 +17,14 @@ body {
     background-size: cover;
     
 }
-
+#top { border:1px dotted black;}
+#wrapLogo{ 
+    width: 50%;
+    min-width: 270px;
+    max-width: 450px;
+    border:1px dotted black;
+}
+#wrapLogo img{ width: 100%;}
 #btTop {
     position: fixed;
     right:75px;
