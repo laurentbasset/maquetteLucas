@@ -1,0 +1,23 @@
+@@charset "UTF-8";
+
+@font-face {
+    font-family: 'AdventPro';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Advent_Pro/AdventPro-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Allerta Stencil';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Allerta_Stencil/Allerta_Stencil.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotu';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Gotu/Gotu.ttf') format('truetype');
+}

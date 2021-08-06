@@ -1,0 +1,26 @@
+@@charset "UTF-8";
+
+/* 
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Gotu', sans-serif; 
+*/
+
+body, html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: "AdventPro", sans-serif;
+    background: url("../img/wave.svg") no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    
+}
+
+#btTop {
+    position: fixed;
+    right:75px;
+    bottom: 75px;
+    z-index: 100;
+}

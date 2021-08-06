@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- bootstrap-->
+    <link href="bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- css -->
+    <!-- <link  href="css/fonts.css" rel="stylesheet"> -->
+    <link  href="css/styles.css" rel="stylesheet">
+
+
     <title>La Tour de Pize</title>
 </head>
 <body>
     <!-- header -->
-    <header>
+    <header id="top">
         <img src="img/logo.svg" alt="La tour de Pize">
     </header>
     
     <!-- main navigation -->
-    <nav>
+    <nav class="mobile">
         <a href="#contact">contact</a>
         <a href="#command">commander</a>
         <a href="#schedule">horaires</a>
         <a href="#map">nous trouver</a>
     </nav>
+
+    <!-- <nav class="desktop">
+        <a href="#contact">contact</a>
+        <a href="#command">commander</a>
+        <a href="#schedule">horaires</a>
+        <a href="#map">nous trouver</a>
+    </nav> -->
 
     <!-- main section -->
     <main>
@@ -37,21 +54,13 @@
                 </p>
                 <span>03 84 82 77 25</span>
             </section>
-
-            <section>
-                <span>Y ALLER</span>
-                <p>
-                    carte
-                </p>
-            </section>
-
-
         </artcicle>
 
         <!-- map integration -->
-        <artcile id="map">
-
-        </artcile>
+        <!-- <artcile id="map">
+            <p><a href="#">Y ALLER</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.6138813992875!2d5.452197915329595!3d47.06742413306108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f2b4b6604b03a9%3A0x542e953525cceb51!2s1%20Rue%20du%20Fourney%2C%2039100%20Choisey!5e0!3m2!1sfr!2sfr!4v1628241483591!5m2!1sfr!2sfr" width="auto" height="450" style="border:2px solid green;" allowfullscreen="" loading="lazy"></iframe>
+        </artcile> -->
 
         <!-- schedule -->
         <article id="schedule">
@@ -62,22 +71,57 @@
         <!-- menu -->
         <article id="menu">
             <h2>menu</h2>
+            <ul>
+                <li>voir tout</li>
+                <li>menus</li>
+                <li>salades</li>
+                <li>salade repas</li>
+                <li>pizzas</li>
+                <li>kebab</li>
+                <li>tacos</li>
+                <li>burgers</li>
+                <li>americains</li>
+                <li>paninis</li>
+                <li>wraps & bagnats</li>
+                <li>petites faims</li>
+                <li>desserts maison</li>
+                <li>boissons</li>
+                <li>boissons alcoolisées</li>
+            </ul>
+
+            <div class="elmenu">
+                <span>Produit numero</span>
+                <p>Description produit ingrédients</p>
+                <p><img src="img/addBasket.svg"></p>
+                <p>prix</p>
+            </div>
+
         </article>
 
         <!-- commande -->
         <article>
             <h2>commander</h2>
+            <table>
+                <tr>
+                    <td>produit numero <span>x2</span></td>
+                    <td><span>+</span><span>XX€</span><span></span></td>
+                </tr>
+                <tr>
+                    <td>produit numero <span>x2</span></td>
+                    <td><span>+</span><span>XX€</span><span></span></td>
+                </tr>
+            </table>
         </article>
 
         <!-- contact -->
         <artcile id="menu">
             <form>
-                <input type="text">
-                <input type="text">
-                <input type="mail">
+                <input type="text"><br>
+                <input type="text"><br>
+                <input type="mail"><br>
                 <textarea>
+                </textarea><br>
                 <input type="submit">
-                </textarea>
             </form>
         </artcile>
     </main>
@@ -93,8 +137,8 @@
             Everybody can use it, and should.
         </p>
     </footer>
-
+    <div id="btTop"><a href="#top"><img src="img/btBack.svg" alt="top"></a></div>
     <!-- background -->
-    <div><img src="img/wave.svg" alt="wave"></div>
+    <!-- <div><img src="img/wave.svg" alt="wave"></div> -->
 </body>
 </html>
