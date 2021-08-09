@@ -9,6 +9,9 @@
     <link href="bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet" >
     <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
     <!-- css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +23,14 @@
 </head>
 <body>
     <!-- header -->
-    <header id="top" class="container">
-        <div class="row justify-content-md-center"><div id="wrapLogo"><img src="img/logo.svg" alt="La tour de Pize"></div></div>
+    <header id="top" class="text-center">
+        <div class="container px-5">
+            <img class="img-fluid" src="img/logo.svg" alt="La tour de Pize">
+        </div>
     </header>
     
     <!-- main navigation -->
-    <nav class="mobile">
+    <nav class="text-center">
         <a class="btNav" href="#contact">contact</a>
         <a class="btNav" href="#command">commander</a>
         <a class="btNav" href="#schedule">horaires</a>
@@ -42,37 +47,39 @@
     <!-- main section -->
     <main>
         <!-- presentation -->
-        <artcicle >
-            <section id="presentation">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.
+        <artcicle class="text-center">
+            <section id="presentation" >Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.
                 Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.
             </section>
             <section>
-                <a href="#">facebook</a>
+                <a href="https://fr-fr.facebook.com/latourdepize/" target="_blank">facebook</a>
                 <p>
                     SALAMANDRE PIZZ <br>
                     1 RUE DU FOURNEY <br> 
                     39100<br>
                     CHOISEY
                 </p>
-                <span>03 84 82 77 25</span>
+                <button id="btgreen">03 84 82 77 25</button>
             </section>
         </artcicle>
 
         <!-- map integration -->
-        <!-- <artcile id="map">
-            <p><a href="#">Y ALLER</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.6138813992875!2d5.452197915329595!3d47.06742413306108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f2b4b6604b03a9%3A0x542e953525cceb51!2s1%20Rue%20du%20Fourney%2C%2039100%20Choisey!5e0!3m2!1sfr!2sfr!4v1628241483591!5m2!1sfr!2sfr" width="auto" height="450" style="border:2px solid green;" allowfullscreen="" loading="lazy"></iframe>
-        </artcile> -->
+        <artcile id="map" class="text-center">
+            <div class="p-5">
+                <p><a href="#">Y ALLER</a></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.6138813992875!2d5.452197915329595!3d47.06742413306108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f2b4b6604b03a9%3A0x542e953525cceb51!2s1%20Rue%20du%20Fourney%2C%2039100%20Choisey!5e0!3m2!1sfr!2sfr!4v1628241483591!5m2!1sfr!2sfr" width="100%" height="450" style="border:2px solid green;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </artcile>
 
         <!-- schedule -->
         <article id="schedule">
-            <h2>horaires</h2>
+            <h2 class="titrebgorange">horaires</h2>
 
         </article>
 
         <!-- menu -->
         <article id="menu">
-            <h2>menu</h2>
+            <h2 class="titrebgorange">menu</h2>
             <ul>
                 <li>voir tout</li>
                 <li>menus</li>

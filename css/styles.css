@@ -17,18 +17,12 @@ body {
     background-size: cover;
     
 }
-#top { border:1px dotted black;}
-#wrapLogo{ 
-    width: 50%;
-    min-width: 270px;
-    max-width: 450px;
-    border:1px dotted black;
-}
-#wrapLogo img{ width: 100%;}
+/* #top { border:1px dotted black;} */
+
 #btTop {
     position: fixed;
-    right:75px;
-    bottom: 75px;
+    right:15px;
+    bottom: 15px;
     z-index: 100;
 }
 
@@ -36,7 +30,7 @@ a:link.btNav {
     display:inline-block;
     width: 150px;
     text-align: center;
-    padding:15px;
+    padding:10px;
     font-family: 'Allerta Stencil', sans-serif;
     background-color: olivedrab;
     text-transform: uppercase;
@@ -44,7 +38,7 @@ a:link.btNav {
     text-decoration: none;
     border-radius: 5px;
     color: black;
-    margin:20px;
+    margin:5px;
 }
 
 a:hover.btNav { color:black; text-decoration: none; }
@@ -53,4 +47,19 @@ a:active.btNav { color:black; text-decoration: none; }
 
 #presentation{
     padding: 20px;
+}
+#btgreen{
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #618C03;
+    border: 0;
+    border-radius:45px;
+}
+.titrebgorange{
+    font-family: Gotu, sans-serif;
+    background-color: #D97904;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 120%;
+    font-size: 25px;
 }
