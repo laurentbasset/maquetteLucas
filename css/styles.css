@@ -1,5 +1,10 @@
 @@charset "UTF-8";
 
+@font-face {
+    font-family: 'Good Mood';
+    src: url(../fonts/Good\ Mood.otf);
+  }
+
 body, html {
     margin:0;
     padding:0;
@@ -117,7 +122,30 @@ a:active.btNav { color:black; text-decoration: none; }
     box-shadow: 4px 2px 5px gray;
 }
 
-#menuscrollh {
-    overflow-x: auto;
-    white-space: nowrap;
+.btselectmenu {
+    font-family: 'Good Mood', sans-serif;
+
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#wrapMenu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#wrapMenu {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.btn {
+    font-family: 'Good Mood', sans-serif;
+    white-space: nowrap;
+    border-radius: ;
+    padding:15px;
+    color:black;
+    margin: 2px;
+    opacity: 50%;
+}
+
+

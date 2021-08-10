@@ -23,6 +23,19 @@
         function test($msg) {
             alert($msg);
         }
+
+        function getvalue(){
+            var radios = document.getElementsByName('btnradio');
+            var valeur;
+            for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                valeur = radios[i].value;
+                //console.log(valeur);
+                document.getElementById('elmenu').innerHTML = valeur;
+                }
+            }
+            
+        }
     </script>
 
 
@@ -96,31 +109,54 @@
         <!-- menu -->
         <article class="container-fluid" id="menu">
             <h2 class="titrebgorange">menu</h2>
-        
-            <ul id="menuscrollh" class="list-inline">
-                <li class="list-inline-item">voir tout</li>
-                <li class="list-inline-item">menus</li>
-                <li class="list-inline-item">salades</li>
-                <li class="list-inline-item">salade repas</li>
-                <li class="list-inline-item">pizzas</li>
-                <li class="list-inline-item">kebab</li>
-                <li class="list-inline-item">tacos</li>
-                <li class="list-inline-item">burgers</li>
-                <li class="list-inline-item">americains</li>
-                <li class="list-inline-item">paninis</li>
-                <li class="list-inline-item">wraps & bagnats</li>
-                <li class="list-inline-item">petites faims</li>
-                <li class="list-inline-item">desserts maison</li>
-                <li class="list-inline-item">boissons</li>
-                <li class="list-inline-item">boissons alcoolisées</li>
-            </ul>
+            
+            <form onchange="getvalue();" class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
+                <!-- > -->
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="menu1" checked>
+                <label class="btn btn-secondary" for="btnradio1">voir tout</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="menu2">
+                <label class="btn btn-secondary" for="btnradio2">menus</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" value="menu3">
+                <label class="btn btn-secondary" for="btnradio3">salades</label>
 
-            <div class="elmenu">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio4">pizzas</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio5">burgers</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio6">americains</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio7">paninis</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio8">wraps & bagants</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio9">petites faims</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio10">desserts maisons</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio11">boissons</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
+                <label class="btn btn-secondary" for="btnradio12">boissons alcoolisées</label>
+
+            </form>
+
+            <div id="elmenu"></div>
+            <!-- <div class="elmenu">
                 <span>Produit numero</span>
                 <p>Description produit ingrédients</p>
                 <p><img src="img/addBasket.svg"></p>
                 <p>prix</p>
-            </div>
+            </div> -->
 
         </article>
 
@@ -169,7 +205,8 @@
         </p>
     </footer>
     <div id="btTop"><a href="#top"><img src="img/btBack.svg" alt="top"></a></div>
-    <!-- background -->
-    <!-- <div><img src="img/wave.svg" alt="wave"></div> -->
+
+
+      
 </body>
 </html>
