@@ -50,6 +50,7 @@ a:active.btNav { color:black; text-decoration: none; }
     border: 0;
     border-radius:45px;
     padding-inline: 25px;
+    box-shadow: 4px 2px 5px gray;
 }
 
 #btyellow{
@@ -76,4 +77,47 @@ a:active.btNav { color:black; text-decoration: none; }
 #addr {
     padding: 20px;
     letter-spacing: 3px;
+}
+
+#schedule{
+    text-transform: uppercase;
+}
+.line {
+    border:1px solid grey; 
+    max-width: 500px;
+    margin-bottom:10px;
+    margin-inline: 20px;
+}
+.days { 
+    width: 50%;
+    padding-left: 10px;
+ }
+.time { 
+    width: 50%;
+    text-align: center;
+}
+
+
+.titrebgred{
+    font-family: Gotu, sans-serif;
+    background-color: #D92B04;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 120%;
+    font-size: 25px;
+}
+
+#btCommand {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 24px;
+    background-color: #D92B04;
+    border: 0;
+    border-radius:45px;
+    box-shadow: 4px 2px 5px gray;
+}
+
+#menuscrollh {
+    overflow-x: auto;
+    white-space: nowrap;
 }

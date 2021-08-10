@@ -18,6 +18,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&family=Advent+Pro:wght@600&family=Allerta+Stencil&family=Gotu&display=swap" rel="stylesheet"> 
     <link  href="css/styles.css" rel="stylesheet">
 
+    <!-- script -->
+    <script>
+        function test($msg) {
+            alert($msg);
+        }
+    </script>
+
 
     <title>La Tour de Pize</title>
 </head>
@@ -32,7 +39,7 @@
     <!-- main navigation -->
     <nav class="text-center">
         <a class="btNav" href="#contact">contact</a>
-        <a class="btNav" href="#command">commander</a>
+        <a class="btNav" href="#menu">commander</a>
         <a class="btNav" href="#schedule">horaires</a>
         <a class="btNav" href="#map">nous trouver</a>
     </nav>
@@ -59,14 +66,14 @@
                     39100<br>
                     CHOISEY
                 </p>
-                <button id="btgreen"><span class="iconify" data-icon="fluent:call-20-filled"></span> 03 84 82 77 25</button>
+                <button id="btgreen" onclick="test('03 84 82 77 25');"><span class="iconify" data-icon="fluent:call-20-filled"></span> 03 84 82 77 25</button>
             </section>
         </artcicle>
 
         <!-- map integration -->
         <artcile id="map" class="text-center">
             <div class="p-5">
-                <p><button id="btyellow"><span class="iconify" data-icon="ic:sharp-room"></span> Y ALLER</button></p>
+                <p><button id="btyellow" onclick="test('map')";><span class="iconify" data-icon="ic:sharp-room"></span> Y ALLER</button></p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.6138813992875!2d5.452197915329595!3d47.06742413306108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f2b4b6604b03a9%3A0x542e953525cceb51!2s1%20Rue%20du%20Fourney%2C%2039100%20Choisey!5e0!3m2!1sfr!2sfr!4v1628241483591!5m2!1sfr!2sfr" width="100%" height="450" style="border:2px solid green;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </artcile>
@@ -74,59 +81,38 @@
         <!-- schedule -->
         <article id="schedule">
             <h2 class="titrebgorange">horaires</h2>
-            <div class="table-responsive">
-            <table class="table">
-                <tr>
-                    <td>lundi</td>
-                    <td>fermé</td>
-                </tr>
-                <tr>
-                    <td>mardi</td>
-                    <td>10h00 21h30</td>
-                </tr>
-                <tr>
-                    <td>mercredi</td>
-                    <td>10h00 21h30</td>
-                </tr>
-                <tr>
-                    <td>jeudi</td>
-                    <td>10h00 21h30</td>
-                </tr>
-                <tr>
-                    <td>vendredi</td>
-                    <td>10h00 21h30</td>
-                </tr>
-                <tr>
-                    <td>samedi</td>
-                    <td>10h00 21h30</td>
-                </tr>
-                <tr>
-                    <td>dimanche</td>
-                    <td>18h00 21h30</td>
-                </tr>
-            </table>
-        </div>
+            <div>
+                <div class="d-flex line"><div class="days">lundi</div><div class="time"><span style="color:#D97904;">fermé</span></div></div>
+                <div class="d-flex line"><div class="days">mardi</div><div class="time">10h00 21h30</div></div>
+                <div class="d-flex line"><div class="days">mercredi</div><div class="time">10h00 21h30</div></div>
+                <div class="d-flex line"><div class="days">jeudi</div><div class="time">10h00 21h30</div></div>
+                <div class="d-flex line"><div class="days">vendredi</div><div class="time">10h00 21h30</div></div>
+                <div class="d-flex line"><div class="days">samedi</div><div class="time">10h00 21h30</div></div>
+                <div class="d-flex line"><div class="days">dimanche</div><div class="time"><span style="color:#D97904;">18h00</span> 21h30</div></div>
+                
+            </div>
         </article>
 
         <!-- menu -->
-        <article id="menu">
+        <article class="container-fluid" id="menu">
             <h2 class="titrebgorange">menu</h2>
-            <ul>
-                <li>voir tout</li>
-                <li>menus</li>
-                <li>salades</li>
-                <li>salade repas</li>
-                <li>pizzas</li>
-                <li>kebab</li>
-                <li>tacos</li>
-                <li>burgers</li>
-                <li>americains</li>
-                <li>paninis</li>
-                <li>wraps & bagnats</li>
-                <li>petites faims</li>
-                <li>desserts maison</li>
-                <li>boissons</li>
-                <li>boissons alcoolisées</li>
+        
+            <ul id="menuscrollh" class="list-inline">
+                <li class="list-inline-item">voir tout</li>
+                <li class="list-inline-item">menus</li>
+                <li class="list-inline-item">salades</li>
+                <li class="list-inline-item">salade repas</li>
+                <li class="list-inline-item">pizzas</li>
+                <li class="list-inline-item">kebab</li>
+                <li class="list-inline-item">tacos</li>
+                <li class="list-inline-item">burgers</li>
+                <li class="list-inline-item">americains</li>
+                <li class="list-inline-item">paninis</li>
+                <li class="list-inline-item">wraps & bagnats</li>
+                <li class="list-inline-item">petites faims</li>
+                <li class="list-inline-item">desserts maison</li>
+                <li class="list-inline-item">boissons</li>
+                <li class="list-inline-item">boissons alcoolisées</li>
             </ul>
 
             <div class="elmenu">
@@ -139,8 +125,9 @@
         </article>
 
         <!-- commande -->
-        <article>
-            <h2>commander</h2>
+        <article >
+            <h2 class="titrebgred">panier</h2>
+            <div class="text-center">
             <table>
                 <tr>
                     <td>produit numero <span>x2</span></td>
@@ -151,10 +138,14 @@
                     <td><span>+</span><span>XX€</span><span></span></td>
                 </tr>
             </table>
+           
+            <p><button id="btCommand" onclick="test('commande')";>commander</button></p>
+            </div>
         </article>
 
         <!-- contact -->
-        <artcile id="menu">
+        <artcile id="contact" class="text-center">
+            <h2>Nous contacter</h2>
             <form>
                 <input type="text"><br>
                 <input type="text"><br>
