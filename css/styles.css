@@ -186,6 +186,12 @@ background-color:#f2b705;
     width:25%;
     text-align:right;
     visibility: hidden;
+    padding:4px;
+}
+
+.qte{
+    font-size: 24px;
+    padding:4px;
 }
 
 .active {
