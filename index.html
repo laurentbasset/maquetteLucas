@@ -19,27 +19,13 @@
     <link  href="css/styles.css" rel="stylesheet">
 
     <!-- script -->
+    <script type="text/javascript" src="js/main.js"></script>
     <script>
         function test($msg) {
             alert($msg);
         }
 
-        function toggleDiv($el) {
-            //console.log($div.className);
-
-            var classDiv = $el.className;
-
-            if($el.className=="elmenu active") {
-                //console.log($el.className);
-                $el.classList.remove('active');
-                
-                
-            }else{
-                //console.log($el.className);
-                $el.classList.add('active');
-            }
-            
-        }
+        
         // function getvalue(){
         //     var radios = document.getElementsByName('btnradio');
         //     var valeur;
@@ -126,84 +112,97 @@
         <article class="container-fluid m0" id="menu">
             <h2 class="titrebgorange">menu</h2>
             
-            <form onchange="getvalue();" class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
-                <!-- > -->
+            <!-- <form onchange="getvalue();" class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group"> -->
+                <form class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="menu1" checked>
-                <label class="btn btn-secondary" for="btnradio1">voir tout</label>
+                <label class="btn btn-secondary btMenu" for="btnradio1">voir tout</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="menu2">
-                <label class="btn btn-secondary" for="btnradio2">menus</label>
+                <label class="btn btn-secondary btMenu" for="btnradio2">menus</label>
               
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" value="menu3">
-                <label class="btn btn-secondary" for="btnradio3">salades</label>
+                <label class="btn btn-secondary btMenu" for="btnradio3">salades</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" value="menu4">
-                <label class="btn btn-secondary" for="btnradio4">pizzas</label>
+                <label class="btn btn-secondary btMenu" for="btnradio4">pizzas</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" value="menu5">
-                <label class="btn btn-secondary" for="btnradio5">burgers</label>
+                <label class="btn btn-secondary btMenu" for="btnradio5">burgers</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" value="menu6">
-                <label class="btn btn-secondary" for="btnradio6">americains</label>
+                <label class="btn btn-secondary btMenu" for="btnradio6">americains</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" value="menu7">
-                <label class="btn btn-secondary" for="btnradio7">paninis</label>
+                <label class="btn btn-secondary btMenu" for="btnradio7">paninis</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off" value="menu8">
-                <label class="btn btn-secondary" for="btnradio8">wraps & bagants</label>
+                <label class="btn btn-secondary btMenu" for="btnradio8">wraps & bagants</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off" value="menu9">
-                <label class="btn btn-secondary" for="btnradio9">petites faims</label>
+                <label class="btn btn-secondary btMenu" for="btnradio9">petites faims</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off" value="menu10">
-                <label class="btn btn-secondary" for="btnradio10">desserts maisons</label>
+                <label class="btn btn-secondary btMenu" for="btnradio10">desserts maisons</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off" value="menu11">
-                <label class="btn btn-secondary" for="btnradio11">boissons</label>
+                <label class="btn btn-secondary btMenu" for="btnradio11">boissons</label>
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off" value="menu12">
-                <label class="btn btn-secondary" for="btnradio12">boissons alcoolisées</label>
+                <label class="btn btn-secondary btMenu" for="btnradio12">boissons alcoolisées</label>
 
             </form>
 
-            <!-- <div id="elmenu"></div>  pour l'exemple js -->
-            
-            <div onclick="toggleDiv(this);" class="elmenu">
-                <span>Produit numero</span>
-                <p>Description produit ingrédients</p>
-                <p><img src="img/addBasket.svg"></p>
-                <p>prix</p>
-            </div>
-
-            <div onclick="toggleDiv(this);"  class="elmenu">
-                <span>Produit numero</span>
-                <p>Description produit ingrédients</p>
-                <p><img src="img/addBasket.svg"></p>
-                <p>prix</p>
+            <div class="elmenu">
+                <div class="infosMenu" onclick="toggleMenu(this);">
+                    <h3>Titre menu</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="ctrlMenu">
+                    <button onclick=addElBasket(id);>+</button>
+                    <span class="qte">0</span>
+                    <button onclick=addElBasket(id);>-</button>
+                </div>
             </div>
 
         </article>
 
         <!-- commande -->
-        <article >
+        <article class="container-fluid">
             <h2 class="titrebgred">panier</h2>
-            <div class="text-center">
-            <table>
-                <tr>
-                    <td>produit numero <span>x2</span></td>
-                    <td><span>+</span><span>XX€</span><span></span></td>
-                </tr>
-                <tr>
-                    <td>produit numero <span>x2</span></td>
-                    <td><span>+</span><span>XX€</span><span></span></td>
-                </tr>
-            </table>
+
+            
+                
+            <div class="elmenu active pan">
+                <div class="infosMenu">
+                    <h3>Titre menu</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="ctrlMenu" style="visibility:visible;">
+                    <button>+</button>
+                    <span class="qte">1</span>
+                    <button>-</button>
+                </div>
+            </div>
+
+            <div class="elmenu active pan">
+                <div class="infosMenu">
+                    <h3>Titre menu</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="ctrlMenu" style="visibility:visible;">
+                    <button>+</button>
+                    <span class="qte">1</span>
+                    <button>-</button>
+                </div>
+            </div>    
+           
            
             <p><button id="btCommand" onclick="test('commande')";>commander</button></p>
             </div>
+
         </article>
 
-        <!-- contact -->
+        contact
         <artcile id="contact" class="text-center">
             <h2>Nous contacter</h2>
             <form>

@@ -137,7 +137,7 @@ a:active.btNav { color:black; text-decoration: none; }
   scrollbar-width: none;  /* Firefox */
 }
 
-.btn {
+.btMenu {
     font-family: 'Good Mood', sans-serif;
     color: black;
     border:0;
@@ -153,12 +153,34 @@ a:active.btNav { color:black; text-decoration: none; }
 background-color:#f2b705;
 }
 
-.elmenu{ cursor:pointer;}
-.active {
-    background-color: darkgray;
+/* menu */
+.elmenu{
+    position:relative;
+    display: inline-block;
+    box-shadow:4px 4px 4px grey;
+    cursor:pointer;
+    width:100%;
+    margin:4px;
+    /* max-width:353px; version destop */
 }
-/* .btn-check {
-    background: color #f2b705 !important;
-} */
 
+
+.infosMenu {
+    position:relaive;
+    float: left;
+    display:inline-block;
+    width: 75%;
+    text-align: left;
+
+}
+.ctrlMenu {
+    float: left;
+    position:relaive;
+    width:25%;
+    text-align:right;
+    visibility: hidden;
+}
+.active {
+    background-color: #F2B70550;
+}
 
