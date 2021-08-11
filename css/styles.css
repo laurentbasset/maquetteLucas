@@ -164,7 +164,6 @@ background-color:#f2b705;
     /* max-width:353px; version destop */
 }
 
-
 .infosMenu {
     position:relaive;
     float: left;
@@ -173,13 +172,21 @@ background-color:#f2b705;
     text-align: left;
 
 }
-.ctrlMenu {
-    float: left;
+*.price{
     position:relaive;
+    float: left;
+    width:25%;
+    text-align:right;
+    font-size: 24px;
+}
+.ctrlMenu {
+    position:relaive;
+    float: left;
     width:25%;
     text-align:right;
     visibility: hidden;
 }
+
 .active {
     background-color: #F2B70550;
 }
