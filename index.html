@@ -22,7 +22,10 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <title>La Tour de Pize</title>
+    <meta name="description" content="Venez déguster des pizzas, burgers, sandwich faits maison dans notre établissement de restauration rapide">
 </head>
+
+
 <body>
     <!-- header -->
     <header id="top" class="text-center">
@@ -135,13 +138,43 @@
             <div class="elmenu">
                 <div class="infosMenu" onclick="toggleMenu(this);">
                     <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.<br>
+                    Sit amet consectetur adipisicing.</p>
                 </div>
                 <div class="price">12€</div>
                 <div class="ctrlMenu">
-                    <button onclick=addToBasket(id);>+</button>
+                    <button onclick=addToBasket(this);>+</button>
                     <span class="qte">0</span>
-                    <button onclick=removeFromBasket(id);>-</button>
+                    <button onclick=removeFromBasket(this);>-</button>
+                </div>
+            </div>
+
+
+            <div class="elmenu">
+                <div class="infosMenu" onclick="toggleMenu(this);">
+                    <h3>Titre menu</h3>
+                    <p>Lorem ipsum dolor sit amet.<br>
+                    Sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="price">12€</div>
+                <div class="ctrlMenu">
+                    <button onclick=addToBasket(this);>+</button>
+                    <span class="qte">0</span>
+                    <button onclick=removeFromBasket(this);>-</button>
+                </div>
+            </div>
+
+            <div class="elmenu">
+                <div class="infosMenu" onclick="toggleMenu(this);">
+                    <h3>Titre menu</h3>
+                    <p>Lorem ipsum dolor sit amet.<br>
+                    Sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="price">12€</div>
+                <div class="ctrlMenu">
+                    <button onclick=addToBasket(this);>+</button>
+                    <span class="qte">0</span>
+                    <button onclick=removeFromBasket(this);>-</button>
                 </div>
             </div>
 
@@ -154,60 +187,49 @@
             
             <!-- element de panier -->
             <div class="elmenu active">
-                <div class="infosMenu">
+                <div class="infosMenu ">
                     <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.<br>
+                    Sit amet consectetur adipisicing.</p>
                 </div>
+                <div class="price">12€</div>
                 <div class="ctrlMenu" style="visibility:visible;">
-                    <button>+</button>
-                    <span class="qte">1</span>
-                    <button>-</button>
+                    <button onclick=addToBasket(this);>+</button>
+                    <span class="qte">5</span>
+                    <button onclick=removeFromBasket(this);>-</button>
                 </div>
             </div>
-
-            
-            <div class="elmenu active">
-                <div class="infosMenu">
-                    <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="ctrlMenu" style="visibility:visible;">
-                    <button>+</button>
-                    <span class="qte">1</span>
-                    <button>-</button>
-                </div>
-            </div>    
            
            
-            <p><button id="btCommand" onclick="test('commande')";>commander</button></p>
+            <p><button class="btRed" onclick="test('commande')";>commander</button></p>
             </div>
 
         </article>
 
         <!-- contact -->
-        <article id="contact" class="text-center">
-            <h2>Nous contacter</h2>
-            <form>
-                <input type="text"><br>
-                <input type="text"><br>
-                <input type="mail"><br>
-                <textarea>
-                </textarea><br>
-                <input type="submit">
+        <section class="text-center" id="contact">
+            <h2 class="mb-4" >Nous contacter</h2>
+            <form method="post">
+                
+                    <input type="text" name="name" id="name" placeholder="Votre nom" required   class="d-block m-auto mb-3 field">
+                    <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required class="d-block m-auto mb-3 field">
+                    <textarea name="content" id="content" placeholder="Votre message..." required rows="10" class="d-block m-auto"></textarea>
+                    <input class="btRed mt-3 mb-5 px-5 py-2" type="submit"></input>
+                
             </form>
-        </article>
+            </section>
     </main>
     <!-- main end -->
 
-    <!-- footer -->
-    <footer>
-        <p>
-            Salamandre Pizz 1 rue du fourney 39100 Choisey<br>
-            Crédits logo: A.M. and Cie<br>
-            Crédits photos: Unsplash<br>
-            © ® Copyrights 2021  Creative commons<br>
-            Everybody can use it, and should.
-        </p>
+    <footer class="row d-flex justify-content-center">
+        <div class="col-8 d-flex">
+            Notre page FACEBOOK<br/>
+            Salamandre Pizz 1 rue du Fourney 39100 Choisey<br/>
+            Crédits logo : Alain Merucci and Co. <br/>
+            Crédit photos : Unsplash<br/>
+            An original design by Lucas M-R. <br/>
+            <a href="#">Mentions légales</a>
+        </div>
     </footer>
     <div id="btTop"><a href="#top"><img src="img/btBack.svg" alt="top"></a></div>
 

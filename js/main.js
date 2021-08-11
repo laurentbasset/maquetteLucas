@@ -6,6 +6,7 @@ function test($msg) {
 function toggleMenu(el) {
     var prt = el.parentNode;
     var ctrl = prt.children[2];
+    var qte = prt.children[1];
 
     if(prt.className=="elmenu active") {
         prt.classList.remove('active');
@@ -14,26 +15,29 @@ function toggleMenu(el) {
     }else{
         prt.classList.add('active');
         ctrl.style.visibility = "visible";
+        qte = ctrl.children[1].innerHTML = 1;
     }
     
 }
 
-function addToBasket() {
+function addToBasket(el) {
+    var prt = el.parentNode;
+    var getQte = prt.children[1].innerHTML;
+    var qte = new Number(getQte);
+    qte++;
+    prt.children[1].innerHTML = qte;    ;
     
 }
 
+function removeFromBasket(el) {
 
-
-
-// function getvalue(){
-//     var radios = document.getElementsByName('btnradio');
-//     var valeur;
-//     for(var i = 0; i < radios.length; i++){
-//     if(radios[i].checked){
-//         // radios[i].style.backgroundColor = "f2b705";
-//         //valeur = radios[i].value;
-//         console.log(valeur);
-//         // document.getElementById('elmenu').innerHTML = valeur;
-//         }
-//     }
-//}
+    var prt = el.parentNode;
+    var getQte = prt.children[1].innerHTML;
+    var qte = new Number(getQte);
+    qte--;
+    if(qte == 0) {
+        var prtEl = el.parentNode; 
+        toggleMenu(prtEl);
+    }
+    prt.children[1].innerHTML = qte; 
+}
