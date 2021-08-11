@@ -17,7 +17,6 @@ function toggleMenu(el) {
         ctrl.style.visibility = "visible";
         qte = ctrl.children[0].innerHTML = 1;
     }
-    
 }
 
 function addToBasket(el) {
@@ -32,12 +31,16 @@ function addToBasket(el) {
 function removeFromBasket(el) {
 
     var prt = el.parentNode;
+    var gprt = prt.parentNode;
     var getQte = prt.children[0].innerHTML;
     var qte = new Number(getQte);
     qte--;
     if(qte == 0) {
         var prtEl = el.parentNode; 
         toggleMenu(prtEl);
+        
+        //console.log (gprt.className == "elpanier active");
+        if(gprt.className == "elpanier active") { gprt.classList.remove('active'); }
     }
     prt.children[0].innerHTML = qte; 
 }
