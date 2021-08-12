@@ -156,7 +156,8 @@ background-color:#f2b705;
 /* menu */
 .elmenu{
     position:relative;
-    display: inline-block;
+    display: flex;
+    align-items: stretch;
     box-shadow:4px 4px 4px grey;
     cursor:pointer;
     width:100%;
@@ -164,40 +165,37 @@ background-color:#f2b705;
     /* max-width:353px; version destop */
 }
 
+.left{
+    flex-grow: 7;
+}
+
 .infosMenu {
     position:relaive;
     float: left;
-    display:inline-block;
-    width: 75%;
-    text-align: left;
-
+    /* display:inline-block; */
+    width: auto;
 }
-*.price{
-    position:relaive;
-    float: left;
-    width:25%;
-    text-align:right;
+.price{
     font-size: 24px;
     padding:4px;
 }
-.ctrlMenu {
-    position:relaive;
-    float: left;
-    width:25%;
-    text-align:right;
-    visibility: hidden;
-    padding:4px;
-}
 
+.right{
+    display:none;
+}
 .qte{
-    font-size: 24px;
+    font-size: 36px;
     padding:4px;
+    text-align: right;
 }
+/* .ctrlMenu {} */
 
 .active {
     background-color: #F2B70550;
-}
+} 
 
+
+/* panier */
 .elpanier{
     position:relative;
     display: inline-block;

@@ -135,49 +135,47 @@
             </form>
 
             <!-- element de commande -->
-            <div class="elmenu">
-                <div class="infosMenu" onclick="toggleMenu(this);">
-                    <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.<br>
-                    Sit amet consectetur adipisicing.</p>
+            <div class="elmenu" >
+                <div class="left" onclick="toggleMenu(this);" >
+                    <div class="infosMenu">
+                        <h3>Titre menu</h3>
+                        <p class="txt">Lorem ipsum dolor sit amet.<br>
+                        Sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="price">12€</div>
                 </div>
-                <div class="price">12€</div>
-                <div class="ctrlMenu">
-                    <span class="qte">0</span>
-                    <button class="btn btn-success"onclick=addToBasket(this);>+</button>
-                    <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
-                </div>
-            </div>
-
-            <!-- element de commande -->
-            <div class="elmenu">
-                <div class="infosMenu" onclick="toggleMenu(this);">
-                    <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.<br>
-                    Sit amet consectetur adipisicing.</p>
-                </div>
-                <div class="price">12€</div>
-                <div class="ctrlMenu">
-                    <span class="qte">0</span>
-                    <button class="btn btn-success"onclick=addToBasket(this);>+</button>
-                    <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+            
+                <div class="right">
+                    <div class="qte">0</div>
+                    <div class="ctrlMenu">
+                        <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                        <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                    </div>
                 </div>
             </div>
 
             <!-- element de commande -->
-            <div class="elmenu">
-                <div class="infosMenu" onclick="toggleMenu(this);">
-                    <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.<br>
-                    Sit amet consectetur adipisicing.</p>
+            <div class="elmenu" >
+                <div class="left" onclick="toggleMenu(this);" >
+                    <div class="infosMenu">
+                        <h3>Titre menu</h3>
+                        <p class="txt">Lorem ipsum dolor sit amet.<br>
+                        Sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="price">12€</div>
                 </div>
-                <div class="price">12€</div>
-                <div class="ctrlMenu">
-                    <span class="qte">0</span>
-                    <button class="btn btn-success"onclick=addToBasket(this);>+</button>
-                    <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+            
+                <div class="right">
+                    <div class="qte">0</div>
+                    <div class="ctrlMenu">
+                        <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                        <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                    </div>
                 </div>
             </div>
+            
+
+
 
         </article>
 
@@ -187,7 +185,7 @@
 
             
             <!-- element de panier -->
-            <div class="elpanier active">
+            <!-- <div class="elpanier active">
                 <div class="infosMenu">
                     <h3>Titre menu</h3>
                     <p>Lorem ipsum dolor sit amet.<br>
@@ -199,22 +197,8 @@
                     <button class="btn btn-success"onclick=addToBasket(this);>+</button>
                     <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
                 </div>
-            </div>
-            
-            <!-- <div class="elmenu active">
-                <div class="infosMenu ">
-                    <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.<br>
-                    Sit amet consectetur adipisicing.</p>
-                </div>
-                <div class="price">12€</div>
-                <div class="ctrlMenu" style="visibility:visible;">
-                    <button onclick=addToBasket(this);>+</button>
-                    <span class="qte">5</span>
-                    <button onclick=removeFromBasket(this);>-</button>
-                </div>
             </div> -->
-           
+         
            
             <p><button class="btRed" onclick="test('commande')";>commander</button></p>
             </div>
