@@ -1,4 +1,4 @@
-@@charset "UTF-8";
+@charset "UTF-8";
 
 @font-face {
     font-family: 'Good Mood';
@@ -9,7 +9,8 @@ body, html {
     margin:0;
     padding:0;
 }
-
+/* div, section, nav { border: 1px dotted blue;} */
+/* article,  header, footer { border: 1px dotted red; } */
 body {
     font-family: "Advent Pro", sans-serif;
     background: url("../img/wave.svg") no-repeat;
@@ -44,6 +45,8 @@ a:hover.btNav { color:black; text-decoration: none; }
 a:visited.btNav { color:black; text-decoration: none; }
 a:active.btNav { color:black; text-decoration: none; }
 
+
+/* article top */
 #presentation{
     padding: 20px;
     letter-spacing: 3px;
@@ -84,6 +87,7 @@ a:active.btNav { color:black; text-decoration: none; }
     letter-spacing: 3px;
 }
 
+/* schedule */
 #schedule{
     text-transform: uppercase;
 }
@@ -160,8 +164,9 @@ background-color:#f2b705;
     align-items: stretch;
     box-shadow:4px 4px 4px grey;
     cursor:pointer;
-    width:100%;
-    margin:4px;
+    margin:15px;
+    padding:4px;
+    background-color:#ffffff70;
     /* max-width:353px; version destop */
 }
 
@@ -172,9 +177,10 @@ background-color:#f2b705;
 .infosMenu {
     position:relaive;
     float: left;
-    /* display:inline-block; */
-    width: auto;
+    min-width:150px;
+    padding:4px;
 }
+
 .price{
     font-size: 24px;
     padding:4px;
@@ -198,12 +204,24 @@ background-color:#f2b705;
 /* panier */
 .elpanier{
     position:relative;
-    display: inline-block;
+    display: flex;
+    align-items: stretch;
     box-shadow:4px 4px 4px grey;
-    cursor:pointer;
-    width:100%;
-    margin:4px;
-    /* max-width:353px; version destop */
+    margin-inline: 15px;
+    padding:4px;
+    background-color:#ffffff70;
+}
+
+.infosElPanier{
+    flex-grow: 7;
+    margin: 10px;
+    
+}
+
+.qteP{
+    text-align: center;
+    width: 40px;
+    padding:10px;
 }
 
 /* form contact */
@@ -218,6 +236,7 @@ background-color:#f2b705;
     max-width: 500px;
   }
 
-  #contact input {
+#contact input {
     width: 250px;
   }
+

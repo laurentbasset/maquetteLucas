@@ -39,18 +39,4 @@ function removeFromBasket(el) {
         toggleMenu(gprt);
     }
     gprt.children[0].innerHTML = qte;    ;
-
-    // var prt = el.parentNode;
-    // var gprt = prt.parentNode;
-    // var getQte = prt.children[0].innerHTML;
-    // var qte = new Number(getQte);
-    // qte--;
-    // if(qte == 0) {
-    //     var prtEl = el.parentNode; 
-    //     toggleMenu(prtEl);
-        
-    //     //console.log (gprt.className == "elpanier active");
-    //     if(gprt.className == "elpanier active") { gprt.style.display ="none"; }
-    // }
-    // prt.children[0].innerHTML = qte; 
 }

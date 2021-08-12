@@ -28,18 +28,18 @@
 
 <body>
     <!-- header -->
-    <header id="top" class="text-center">
-        <div class="container px-5">
+    <header id="top" class="container-fluid px-5 text-center">
             <img class="img-fluid" src="img/logo.svg" alt="La tour de Pize">
-        </div>
     </header>
     
     <!-- main navigation -->
     <nav class="text-center">
-        <a class="btNav" href="#contact">contact</a>
-        <a class="btNav" href="#menu">commander</a>
-        <a class="btNav" href="#schedule">horaires</a>
-        <a class="btNav" href="#map">nous trouver</a>
+        <div class="container px-5">
+            <a class="btNav" href="#contact">contact</a>
+            <a class="btNav" href="#menu">commander</a>
+            <a class="btNav" href="#schedule">horaires</a>
+            <a class="btNav" href="#map">nous trouver</a>
+        </div>
     </nav>
 
     <!-- <nav class="desktop">
@@ -91,11 +91,12 @@
             </div>
         </article>
 
-        <!-- menu -->
-        <article class="container-fluid m0" id="menu">
-            <h2 class="titrebgorange">menu</h2>
-            
-                <form class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
+        <!-- la carte -->
+        <article id="menu">
+        <h2 class="titrebgorange">menu</h2>
+
+        <section class="my-1">
+                <form class="d-flex flex-nowrap overflow-auto " id="wrapMenu" role="group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="menu1" checked>
                 <label class="btn btn-secondary btMenu" for="btnradio1">voir tout</label>
               
@@ -131,10 +132,12 @@
 
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off" value="menu12">
                 <label class="btn btn-secondary btMenu" for="btnradio12">boissons alcoolisées</label>
+                </form>
+            </section>
 
-            </form>
-
-            <!-- element de commande -->
+           
+        <section id="wrapCommandes">
+            
             <div class="elmenu" >
                 <div class="left" onclick="toggleMenu(this);" >
                     <div class="infosMenu">
@@ -154,7 +157,7 @@
                 </div>
             </div>
 
-            <!-- element de commande -->
+            
             <div class="elmenu" >
                 <div class="left" onclick="toggleMenu(this);" >
                     <div class="infosMenu">
@@ -173,40 +176,55 @@
                     </div>
                 </div>
             </div>
-            
-
-
-
+        </section>
         </article>
 
-        <!-- commande -->
-        <article class="container-fluid">
-            <h2 class="titrebgred">panier</h2>
-
-            
-            <!-- element de panier -->
-            <!-- <div class="elpanier active">
-                <div class="infosMenu">
-                    <h3>Titre menu</h3>
-                    <p>Lorem ipsum dolor sit amet.<br>
-                    Sit amet consectetur adipisicing.</p>
+        <!-- Panier -->
+        <article>
+        <h2 class="titrebgred">panier</h2>
+        <section id="wrapPanier">
+                <!-- element panier -->
+                <div class="elpanier d-flex align-items-center" >
+                    <span class="infosElPanier">Titre menu - 12€</span>
+                    <button class="btn btn-success">+</button>
+                    <span class="qteP">2</span>
+                    <button class="btn btn-danger">-</button>
+                 
                 </div>
-                <div class="price">12€</div>
-                <div class="ctrlMenu" style="visibility:visible;">
-                    <span class="qte">2</span>
-                    <button class="btn btn-success"onclick=addToBasket(this);>+</button>
-                    <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
-                </div>
-            </div> -->
-         
-           
-            <p><button class="btRed" onclick="test('commande')";>commander</button></p>
-            </div>
 
+                <!-- element panier -->
+                <div class="elpanier d-flex align-items-center" >
+                    <span class="infosElPanier">Titre menu - 12€</span>
+                    <button class="btn btn-success">+</button>
+                    <span class="qteP">4</span>
+                    <button class="btn btn-danger">-</button>
+                 
+                </div>
+
+                <!-- element panier -->
+                <div class="elpanier d-flex align-items-center" >
+                    <span class="infosElPanier">Titre menu - 12€</span>
+                    <button class="btn btn-success">+</button>
+                    <span class="qteP">1</span>
+                    <button class="btn btn-danger">-</button>
+                 
+                </div>
+
+                <!-- element panier -->
+                <div class="elpanier d-flex align-items-center" >
+                    <span class="infosElPanier">Titre menu - 12€</span>
+                    <button class="btn btn-success">+</button>
+                    <span class="qteP">1</span>
+                    <button class="btn btn-danger">-</button>
+                 
+                </div>
+                <div class="text-center m-5"><button class="btRed" onclick="test('commande')";>commander</button></div>
+        </sectio
+        
         </article>
 
         <!-- contact -->
-        <section class="text-center" id="contact">
+        <article class="text-center" id="contact">
             <h2 class="mb-4" >Nous contacter</h2>
             <form method="post">
                 
@@ -216,12 +234,12 @@
                     <input class="btRed mt-3 mb-5 px-5 py-2" type="submit"></input>
                 
             </form>
-            </section>
+        </article>
     </main>
     <!-- main end -->
 
-    <footer class="row d-flex justify-content-center">
-        <div class="col-8 d-flex">
+    <footer class="container-fluid footer">
+        <div class="d-flex">
             Notre page FACEBOOK<br/>
             Salamandre Pizz 1 rue du Fourney 39100 Choisey<br/>
             Crédits logo : Alain Merucci and Co. <br/>
@@ -230,6 +248,7 @@
             <a href="#">Mentions légales</a>
         </div>
     </footer>
+
     <div id="btTop"><a href="#top"><img src="img/btBack.svg" alt="top"></a></div>
 
 
