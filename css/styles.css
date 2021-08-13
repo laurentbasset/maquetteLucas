@@ -255,4 +255,9 @@ background-color:#f2b705;
             clip-path: url(#decoupage);
             margin-top:150px;   
         }
+
+        #wrapMenu{
+            flex-wrap: wrap !important;
+            overflow: initial !important;
+        }
   }
