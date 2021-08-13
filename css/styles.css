@@ -9,8 +9,8 @@ body, html {
     margin:0;
     padding:0;
 }
-div, section, nav { border: 1px dotted blue;} 
-article,  header, footer { border: 1px dotted red; }
+/* div, section, nav { border: 1px dotted blue;} 
+article,  header, footer { border: 1px dotted red; } */
 body {
     font-family: "Advent Pro", sans-serif;
     background: url("../img/wave.svg") no-repeat;
