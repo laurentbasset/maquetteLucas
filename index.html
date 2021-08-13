@@ -33,13 +33,11 @@
     </header>
     
     <!-- main navigation -->
-    <nav class="text-center">
-        <div class="container px-5">
+    <nav class="container-fluid text-center px-5">
             <a class="btNav" href="#contact">contact</a>
             <a class="btNav" href="#menu">commander</a>
             <a class="btNav" href="#schedule">horaires</a>
             <a class="btNav" href="#map">nous trouver</a>
-        </div>
     </nav>
 
     <!-- <nav class="desktop">
@@ -50,37 +48,36 @@
     </nav> -->
 
     <!-- main section -->
-    <main>
+    <main class="container-fluid">
         <!-- presentation -->
-        <article class="text-center">
-            <section id="presentation" >Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.
+        <article class="row d-flex justify-content-end">
+            <section id="presentation" class="col-12 text-center">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.
                 Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.
             </section>
-            <section>
-               <p><a href="https://fr-fr.facebook.com/latourdepize/" target="_blank" alt="facebook"><span class="iconify" data-icon="logos:facebook" data-width="48" data-height="48"></span></a></p>
+            <section class="col-12 text-center">
+               <a href="https://fr-fr.facebook.com/latourdepize/" target="_blank" alt="facebook"><span class="iconify" data-icon="logos:facebook" data-width="48" data-height="48"></span></a></p>
                 <p id="addr">
                     SALAMANDRE PIZZ <br>
                     1 RUE DU FOURNEY <br> 
                     39100<br>
                     CHOISEY
-                </p>
-                <button id="btgreen" onclick="test('03 84 82 77 25');"><span class="iconify" data-icon="fluent:call-20-filled"></span> 03 84 82 77 25</button>
+                <p><button id="btgreen" onclick="test('03 84 82 77 25');"><span class="iconify" data-icon="fluent:call-20-filled"></span> 03 84 82 77 25</button></p>
             </section>
         </article>
 
         <!-- map integration -->
-        <article id="map" class="text-center">
-            <div class="p-5">
-                <p><button id="btyellow" onclick="test('map')";><span class="iconify" data-icon="ic:sharp-room"></span> Y ALLER</button></p>
+        <article id="map" class="row text-center">
+            <div class="p-5 col-12">
+                <p><button id="btyellow" onclick="test('map');"><span class="iconify" data-icon="ic:sharp-room"></span> Y ALLER</button></p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.6138813992875!2d5.452197915329595!3d47.06742413306108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f2b4b6604b03a9%3A0x542e953525cceb51!2s1%20Rue%20du%20Fourney%2C%2039100%20Choisey!5e0!3m2!1sfr!2sfr!4v1628241483591!5m2!1sfr!2sfr" width="100%" height="450" style="border:2px solid green;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
 
         <!-- schedule -->
-        <article id="schedule">
-            <h2 class="titrebgorange">horaires</h2>
-            <div>
-                <div class="d-flex line"><div class="days">lundi</div><div class="time"><span style="color:#D97904;">fermé</span></div></div>
+        <article id="schedule" class="row">
+            <h2 class="titrebgorange col-12">horaires</h2>
+            <section class="col-12">
+                <div  class="d-flex line"><div class="days">lundi</div><div class="time"><span style="color:#D97904;">fermé</span></div></div>
                 <div class="d-flex line"><div class="days">mardi</div><div class="time">10h00 21h30</div></div>
                 <div class="d-flex line"><div class="days">mercredi</div><div class="time">10h00 21h30</div></div>
                 <div class="d-flex line"><div class="days">jeudi</div><div class="time">10h00 21h30</div></div>
@@ -88,14 +85,14 @@
                 <div class="d-flex line"><div class="days">samedi</div><div class="time">10h00 21h30</div></div>
                 <div class="d-flex line"><div class="days">dimanche</div><div class="time"><span style="color:#D97904;">18h00</span> 21h30</div></div>
                 
-            </div>
+            </section>
         </article>
 
         <!-- la carte -->
-        <article id="menu">
-        <h2 class="titrebgorange">menu</h2>
+        <article id="menu" class="row">
+        <h2 class="titrebgorange col-12">menu</h2>
 
-        <section class="my-1">
+        <section class="col-12">
                 <form class="d-flex flex-nowrap overflow-auto " id="wrapMenu" role="group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="menu1" checked>
                 <label class="btn btn-secondary btMenu" for="btnradio1">voir tout</label>
@@ -134,9 +131,11 @@
                 <label class="btn btn-secondary btMenu" for="btnradio12">boissons alcoolisées</label>
                 </form>
             </section>
+        </article>
 
-           
-        <section id="wrapCommandes">
+        <!-- blocs responsives -->
+        <article class="row">
+        <section id="wrapCommandes" class="col-md-12 col-lg-7">
             
             <div class="elmenu" >
                 <div class="left" onclick="toggleMenu(this);" >
@@ -177,12 +176,13 @@
                 </div>
             </div>
         </section>
-        </article>
+        
 
         <!-- Panier -->
-        <article>
-        <h2 class="titrebgred">panier</h2>
+        <h2 class="titrebgred" id="titrepanier">panier</h2>
+        <div id="wrapPanier" class="col-md-12 col-lg-5">
         <section id="wrapPanier">
+
                 <!-- element panier -->
                 <div class="elpanier d-flex align-items-center" >
                     <span class="infosElPanier">Titre menu - 12€</span>
@@ -218,23 +218,25 @@
                     <button class="btn btn-danger">-</button>
                  
                 </div>
-                <div class="text-center m-5"><button class="btRed" onclick="test('commande')";>commander</button></div>
-        </sectio
-        
+
+                <div class="text-center m-5"><button class="btRed" onclick="test('commande');">commander</button></div>
+
+            </section>
         </article>
 
         <!-- contact -->
-        <article class="text-center" id="contact">
-            <h2 class="mb-4" >Nous contacter</h2>
+        <article class="row text-center" id="contact">
+            <h2 class="col-12 mb-4" >Nous contacter</h2>
             <form method="post">
                 
                     <input type="text" name="name" id="name" placeholder="Votre nom" required   class="d-block m-auto mb-3 field">
                     <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required class="d-block m-auto mb-3 field">
                     <textarea name="content" id="content" placeholder="Votre message..." required rows="10" class="d-block m-auto"></textarea>
-                    <input class="btRed mt-3 mb-5 px-5 py-2" type="submit"></input>
+                    <input class="btRed mt-3 mb-5 px-5 py-2" type="submit"/>
                 
             </form>
         </article>
+
     </main>
     <!-- main end -->
 
