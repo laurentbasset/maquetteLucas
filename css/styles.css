@@ -57,6 +57,8 @@ a:active.btNav { color:black; text-decoration: none; }
 #btgreen{
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 36px;
+    color: black;
+    text-decoration: none;
     background-color: #618C03;
     border: 0;
     border-radius:45px;
@@ -246,21 +248,86 @@ background-color:#f2b705;
     width: 250px;
   }
 
+/* images en background */
+/* IMAGES IN THE BACKGROUND */
 
-  @media screen and (min-width: 993px) {
-      #titrepanier{ display:none; }
-      #presentation {
+#pizzabg{
+    position:absolute;
+    top:350px;
+    right:0px;
+    z-index:-3;
+}
+#comptoir{
+    position:absolute;
+    top:800px;
+    right:100px;
+    z-index:1;
+}
+#salade{
+    position:absolute;
+    top:1200px;
+    left:0px;
+    
+}
+#saladetwo{
+    position:absolute;
+    top:1600px;
+    left:0px;
+    
+}
+#terrasse{
+    position:absolute;
+    top:1800px;
+    left:300px;
+    
+}
+#plate{
+    position:absolute;
+    top:2000px;
+    right:0px;
+    
+}
+#tomate{
+    position:absolute;
+    top:2200px;
+    left:90px;
+    
+}
+#chou{
+    position:absolute;
+    top:2700px;
+    right:0px;
+    
+}
+#hamburger{
+    position:absolute;
+    top:3050px;
+    left:0px;
+    
+}
+#laitue{
+    position:absolute;
+    top:3200px;
+    right:0px;
+    
+}
+
+@media screen and (min-width: 993px) {
+     
+    #titrepanier{ display:none; }
+      
+    #presentation {
         max-width:600px;
         margin-right:20px;
-        }
+    }
 
-        #mapdesktop {
-            clip-path: url(#decoupage);
-            margin-top:150px;   
-        }
+    #mapdesktop {
+        clip-path: url(#decoupage);
+        margin-top:150px;   
+    }
 
-        #wrapMenu{
-            flex-wrap: wrap !important;
-            overflow: initial !important;
-        }
-  }
+    #wrapMenu{
+        flex-wrap: wrap !important;
+        overflow: initial !important;
+    }
+}
