@@ -111,7 +111,6 @@ a:active.btNav { color:black; text-decoration: none; }
     text-align: center;
 }
 
-
 .titrebgred{
     font-family: Gotu, sans-serif;
     background-color: #D92B04;
@@ -135,8 +134,8 @@ a:active.btNav { color:black; text-decoration: none; }
     font-family: 'Good Mood', sans-serif;
 }
 
-#mapdesktop{
-    width:80% !important;
+#googlemap{
+    width:100% !important;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 #wrapMenu::-webkit-scrollbar {
@@ -151,14 +150,19 @@ a:active.btNav { color:black; text-decoration: none; }
 
 .btMenu {
     font-family: 'Good Mood', sans-serif;
-    color: black;
+    background-color: #01f0;
+    box-shadow: 0px 3px 5px #1d1d1d;
+    color: #1d1d1d;
+    font-size:40px;
+    white-space:nowrap;
+    padding:24px;
+    margin-right:3px;
+    margin-bottom: 20px;
     border:0;
-    font-size: 24px;
-    white-space: nowrap;
     border-radius: 0;
-    padding:25px;
-    box-shadow: 1px 4px 5px darkgray;
-    background-color: #1fe0;
+}
+.btMenu:hover {
+    background-color:#ffcf40;
 }
 
 .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
@@ -249,9 +253,7 @@ background-color:#f2b705;
   }
 
 /* images en background */
-/* IMAGES IN THE BACKGROUND */
-
-#pizzabg{
+#pizza{
     position:absolute;
     top:350px;
     right:0px;
@@ -267,21 +269,18 @@ background-color:#f2b705;
     position:absolute;
     top:1200px;
     left:0px;
-    
 }
-#saladetwo{
+#salade2{
     position:absolute;
     top:1600px;
-    left:0px;
-    
+    left:0px; 
 }
 #terrasse{
     position:absolute;
     top:1800px;
     left:300px;
-    
 }
-#plate{
+#assiette{
     position:absolute;
     top:2000px;
     right:0px;
@@ -291,25 +290,21 @@ background-color:#f2b705;
     position:absolute;
     top:2200px;
     left:90px;
-    
 }
 #chou{
     position:absolute;
     top:2700px;
     right:0px;
-    
 }
 #hamburger{
     position:absolute;
     top:3050px;
     left:0px;
-    
 }
 #laitue{
     position:absolute;
     top:3200px;
     right:0px;
-    
 }
 
 @media screen and (min-width: 993px) {
@@ -318,10 +313,12 @@ background-color:#f2b705;
       
     #presentation {
         max-width:600px;
-        margin-right:20px;
+        margin-right:20%;
+        margin-top:400px;
+        margin-bottom:900px
     }
 
-    #mapdesktop {
+    #googlemap {
         clip-path: url(#decoupage);
         margin-top:150px;   
     }
