@@ -20,13 +20,14 @@ function toggleMenu(el) {
     }
 }
 
+// boutons + -
 function addToBasket(el) {
     var prt = el.parentNode;
     var gprt = prt.parentNode;
     var getQte = gprt.children[0].innerHTML;
     var qte = new Number(getQte);
     qte++;
-    gprt.children[0].innerHTML = qte;    ;
+    gprt.children[0].innerHTML = qte;
 }
 
 function removeFromBasket(el) {
@@ -38,5 +39,5 @@ function removeFromBasket(el) {
     if(qte == 0) {
         toggleMenu(gprt);
     }
-    gprt.children[0].innerHTML = qte;    ;
+    gprt.children[0].innerHTML = qte;
 }

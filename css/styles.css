@@ -133,6 +133,9 @@ a:active.btNav { color:black; text-decoration: none; }
     font-family: 'Good Mood', sans-serif;
 }
 
+#mapdesktop{
+    width:80% !important;
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 #wrapMenu::-webkit-scrollbar {
   display: none;
@@ -178,7 +181,7 @@ background-color:#f2b705;
 }
 
 .infosMenu {
-    position:relaive;
+    position:relative;
     float: left;
     min-width:150px;
     padding:4px;
@@ -251,7 +254,7 @@ background-color:#f2b705;
         margin-right:20px;
         }
 
-        .mapdesktop {
+        #mapdesktop {
             clip-path: url(#decoupage);
             margin-top:150px;   
         }
